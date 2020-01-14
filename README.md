@@ -1,6 +1,6 @@
-# Group 2 - Detecting clickbait in Tweets
+# Detecting clickbait in Tweets
 
-*Authors: Alexandre Gondar, Ana Ribeiro, Helena Magro, Miguel Lopes*
+This project aims to identify whether a news post in Twitter is a clickbait or not. Clickbait is a form of false advertisement which uses text and/or images designed to attract attention and entice users to follow the link and read, view, or listen to the linked piece of online content, with a defining characteristic of being deceptive, typically sensationalized or misleading. 1 Many papers have been written about clickbait detection techniques, but many as well fail in integrating the image as an input to detect clickbaits in the posts. Vaibhaw et al (2018) 2 have created a model that not only incorporates textual features, modeled using BiLSTM and augmented with an attention mechanism, but also considers related images for clickbait detection. This article sets itself to improve this model. To do so, we have applied a bidirectional LSTM with an attention mechanism to understand the effect a word has on classifying a post as a clickbait or not; a Siamese net to capture the similarity between the text on the post and the information on the article it refers to; and a CNN-model for the images. In the end, the concatenation of the three models will serve as input to a fully connected layer. This model achieved a RSME of 0.118 and an accuracy of 83.2%.
 
 The following should be the folder structure of the project:
 
