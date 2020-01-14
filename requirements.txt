@@ -1,0 +1,9 @@
+keras
+gensim
+pickle
+pandas
+numpy
+matplotlib
+Levenshtein 
+seaborn
+
